@@ -47,3 +47,103 @@ body {
     border-radius: 18px;
     overflow: hidden;
 }
+
+
+/* PREVIOUS OPERAND */
+.previous-operand {
+    width: 100%;
+    min-height: 28px;
+    color: #9ca3af;
+    font-size: 18px;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+/* CURRENT OPERAND */
+.current-operand {
+    width: 100%;
+    margin-top: 6px;
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+/* BUTTON GRID */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* ALL BUTTONS */
+.btn {
+    height: 70px;
+    border: none;
+    border-radius: 16px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* NUMBER BUTTONS */
+.number {
+    background: #374151;
+    color: #ffffff;
+}
+
+.number:hover {
+    background: #4b5563;
+}
+
+/* OPERATOR BUTTONS */
+.operator {
+    background: #6366f1;
+    color: #ffffff;
+}
+
+.operator:hover {
+    background: #4f46e5;
+}
+
+/* ACTION BUTTONS */
+.action {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+.action:hover {
+    background: #d1d5db;
+}
+
+/* EQUALS BUTTON */
+.equals {
+    grid-column: span 2;
+    background: #22c55e;
+    color: #ffffff;
+}
+
+.equals:hover {
+    background: #16a34a;
+}
+
+/* ZERO BUTTON */
+.zero {
+    grid-column: span 2;
+}
+
+/* ERROR STATE */
+.display.error .current-operand {
+    color: #ef4444;
+    font-size: 24px;
+}
