@@ -147,3 +147,49 @@ body {
     color: #ef4444;
     font-size: 24px;
 }
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 480px) {
+    .calculator {
+        width: 100%;
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .display {
+        min-height: 110px;
+        padding: 16px;
+    }
+
+    .current-operand {
+        font-size: 34px;
+    }
+
+    .previous-operand {
+        font-size: 16px;
+    }
+
+    .buttons {
+        gap: 9px;
+    }
+
+    .btn {
+        height: 62px;
+        border-radius: 14px;
+        font-size: 20px;
+    }
+}
+
+
+/* SMALL SCREENS */
+@media (max-width: 350px) {
+    .btn {
+        height: 55px;
+        font-size: 18px;
+    }
+
+    .current-operand {
+        font-size: 28px;
+    }
+}
