@@ -25,3 +25,64 @@ let calculationHistory = JSON.parse(
 function updateDisplay() {
     currentOperand.textContent = expression || "0";
 }
+
+// Check Operator
+
+function isOperator(value) {
+    return ["+", "−", "×", "÷", "%"].includes(value);
+}
+
+// Add Number
+
+function appendNumber(number) {
+    if (justCalculated) {
+        expression = "";
+        justCalculated = false;
+    }
+
+    const parts = expression.split(/[+−×÷%]/);
+    const currentNumber = parts[parts.length - 1];
+
+    if (number === ".") {
+        if (currentNumber.includes(".")) {
+            return;
+        }
+
+        if (currentNumber === "") {
+            expression += "0.";
+        } else {
+            expression += ".";
+        }
+
+        updateDisplay();
+        return;
+    }
+
+    if (currentNumber === "0") {
+        expression = expression.slice(0, -1) + number;
+    } else {
+        expression += number;
+    }
+
+    updateDisplay();
+}
+
+// Add Operator
+
+function chooseOperator(operator) {
+    if (expression === "") {
+        return;
+    }
+
+    justCalculated = false;
+
+    const lastCharacter = expression.slice(-1);
+
+    if (isOperator(lastCharacter)) {
+        expression = expression.slice(0, -1) + operator;
+    } else {
+        expression += operator;
+    }
+
+    updateDisplay();
+}
