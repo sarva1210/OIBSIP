@@ -169,6 +169,29 @@ body {
     padding: 15px 0;
 }
 
+/* CLEAR HISTORY */
+.clear-history {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #ef4444;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.clear-history:hover {
+    background: #dc2626;
+}
+
+
 /* BUTTON GRID */
 .buttons {
     display: grid;
