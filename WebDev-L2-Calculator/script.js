@@ -86,3 +86,29 @@ function chooseOperator(operator) {
 
     updateDisplay();
 }
+
+// Delete
+
+function deleteNumber() {
+    if (justCalculated) {
+        expression = "";
+        justCalculated = false;
+    } else {
+        expression = expression.slice(0, -1);
+    }
+
+    display.classList.remove("error");
+
+    updateDisplay();
+}
+
+// Clear Calculator
+
+function clearCalculator() {
+    expression = "";
+    justCalculated = false;
+
+    display.classList.remove("error");
+
+    updateDisplay();
+}
