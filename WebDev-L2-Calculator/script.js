@@ -238,3 +238,47 @@ function showError(message) {
 
     updateDisplay();
 }
+
+// Save History
+
+function saveHistory(expressionValue, result) {
+    calculationHistory.unshift({
+        expression: expressionValue,
+        result: result
+    });
+
+    if (calculationHistory.length > 20) {
+        calculationHistory.pop();
+    }
+
+    localStorage.setItem(
+        "calculationHistory",
+        JSON.stringify(calculationHistory)
+    );
+
+    renderHistory();
+}
+
+// Render History
+
+function renderHistory() {
+    historyList.innerHTML = "";
+
+    if (calculationHistory.length === 0) {
+        historyList.innerHTML =
+            '<p class="empty-history">No calculations yet</p>';
+
+        return;
+    }
+
+    calculationHistory.forEach(function (item) {
+        const historyItem = document.createElement("div");
+
+        historyItem.classList.add("history-item");
+
+        historyItem.textContent =
+            `${item.expression} = ${item.result}`;
+
+        historyList.appendChild(historyItem);
+    });
+}
