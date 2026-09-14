@@ -112,3 +112,39 @@ function clearCalculator() {
 
     updateDisplay();
 }
+
+// Calculate
+
+function calculate() {
+    if (!expression) {
+        return;
+    }
+
+    const lastCharacter = expression.slice(-1);
+
+    if (isOperator(lastCharacter)) {
+        return;
+    }
+
+    try {
+        const originalExpression = expression;
+
+        const result = calculateExpression(expression);
+
+        const formattedResult = formatResult(result);
+
+        saveHistory(originalExpression, formattedResult);
+
+        expression = formattedResult;
+        justCalculated = true;
+
+        updateDisplay();
+    } catch (error) {
+        expression = error.message;
+        justCalculated = true;
+
+        display.classList.add("error");
+
+        updateDisplay();
+    }
+}
