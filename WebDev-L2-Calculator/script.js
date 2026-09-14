@@ -148,3 +148,72 @@ function calculate() {
         updateDisplay();
     }
 }
+
+// Calculate Expression Without eval()
+
+function calculateExpression(input) {
+    const numbers = input.split(/[+−×÷%]/).map(Number);
+    const operators = input.match(/[+−×÷%]/g);
+
+    if (!operators || numbers.length !== operators.length + 1) {
+        throw new Error("Invalid expression");
+    }
+
+    // Multiplication, Division and Modulus
+
+    for (let i = 0; i < operators.length; i++) {
+        if (
+            operators[i] === "×" ||
+            operators[i] === "÷" ||
+            operators[i] === "%"
+        ) {
+            const firstNumber = numbers[i];
+            const secondNumber = numbers[i + 1];
+
+            let result;
+
+            if (operators[i] === "×") {
+                result = firstNumber * secondNumber;
+            }
+
+            if (operators[i] === "÷") {
+                if (secondNumber === 0) {
+                    throw new Error("Cannot divide by zero");
+                }
+
+                result = firstNumber / secondNumber;
+            }
+
+            if (operators[i] === "%") {
+                if (secondNumber === 0) {
+                    throw new Error("Cannot divide by zero");
+                }
+
+                result = firstNumber % secondNumber;
+            }
+
+            numbers[i] = result;
+
+            numbers.splice(i + 1, 1);
+            operators.splice(i, 1);
+
+            i--;
+        }
+    }
+
+    // Addition and Subtraction
+
+    let result = numbers[0];
+
+    for (let i = 0; i < operators.length; i++) {
+        if (operators[i] === "+") {
+            result += numbers[i + 1];
+        }
+
+        if (operators[i] === "−") {
+            result -= numbers[i + 1];
+        }
+    }
+
+    return result;
+}
