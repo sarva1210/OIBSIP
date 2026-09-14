@@ -217,3 +217,24 @@ function calculateExpression(input) {
 
     return result;
 }
+
+// Format Result
+
+function formatResult(number) {
+    if (!Number.isFinite(number)) {
+        throw new Error("Invalid result");
+    }
+
+    return Number(number.toFixed(10)).toString();
+}
+
+// Show Error
+
+function showError(message) {
+    expression = message;
+    justCalculated = true;
+
+    display.classList.add("error");
+
+    updateDisplay();
+}
