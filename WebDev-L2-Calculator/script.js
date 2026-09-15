@@ -304,3 +304,40 @@ clearHistoryBtn.addEventListener("click", function () {
 
     renderHistory();
 });
+
+
+// Calculator Button Events
+
+buttons.addEventListener("click", function (event) {
+    const button = event.target;
+
+    if (!button.classList.contains("btn")) {
+        return;
+    }
+
+    const number = button.dataset.number;
+    const operator = button.dataset.operation;
+    const action = button.dataset.action;
+
+    display.classList.remove("error");
+
+    if (number !== undefined) {
+        appendNumber(number);
+    }
+
+    if (operator !== undefined) {
+        chooseOperator(operator);
+    }
+
+    if (action === "equals") {
+        calculate();
+    }
+
+    if (action === "clear") {
+        clearCalculator();
+    }
+
+    if (action === "delete") {
+        deleteNumber();
+    }
+});
