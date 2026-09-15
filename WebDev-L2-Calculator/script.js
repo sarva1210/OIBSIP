@@ -282,3 +282,15 @@ function renderHistory() {
         historyList.appendChild(historyItem);
     });
 }
+
+// Open / Close History
+
+historyBtn.addEventListener("click", function () {
+    historyPanel.classList.toggle("active");
+
+    renderHistory();
+});
+
+closeHistory.addEventListener("click", function () {
+    historyPanel.classList.remove("active");
+});
