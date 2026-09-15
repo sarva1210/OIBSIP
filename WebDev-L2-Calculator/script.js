@@ -294,3 +294,13 @@ historyBtn.addEventListener("click", function () {
 closeHistory.addEventListener("click", function () {
     historyPanel.classList.remove("active");
 });
+
+// Clear History
+
+clearHistoryBtn.addEventListener("click", function () {
+    calculationHistory = [];
+
+    localStorage.removeItem("calculationHistory");
+
+    renderHistory();
+});
