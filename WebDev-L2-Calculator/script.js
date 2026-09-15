@@ -341,3 +341,56 @@ buttons.addEventListener("click", function (event) {
         deleteNumber();
     }
 });
+
+
+// Keyboard Support
+
+document.addEventListener("keydown", function (event) {
+    const key = event.key;
+
+    if ((key >= "0" && key <= "9") || key === ".") {
+        display.classList.remove("error");
+        appendNumber(key);
+    }
+
+    if (key === "+") {
+        display.classList.remove("error");
+        chooseOperator("+");
+    }
+
+    if (key === "-") {
+        display.classList.remove("error");
+        chooseOperator("−");
+    }
+
+    if (key === "*") {
+        display.classList.remove("error");
+        chooseOperator("×");
+    }
+
+    if (key === "/") {
+        event.preventDefault();
+
+        display.classList.remove("error");
+
+        chooseOperator("÷");
+    }
+
+    if (key === "%") {
+        display.classList.remove("error");
+        chooseOperator("%");
+    }
+
+    if (key === "Enter" || key === "=") {
+        event.preventDefault();
+        calculate();
+    }
+
+    if (key === "Backspace") {
+        deleteNumber();
+    }
+
+    if (key === "Escape") {
+        clearCalculator();
+    }
+});
