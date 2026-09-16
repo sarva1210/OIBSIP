@@ -398,3 +398,6 @@ document.addEventListener("keydown", function (event) {
 
 // Load History
 renderHistory();
+
+// Initial Display
+updateDisplay();
