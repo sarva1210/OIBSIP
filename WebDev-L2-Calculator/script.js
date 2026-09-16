@@ -113,8 +113,8 @@ function clearCalculator() {
     updateDisplay();
 }
 
-// Calculate
 
+// Calculate
 function calculate() {
     if (!expression) {
         return;
@@ -283,8 +283,8 @@ function renderHistory() {
     });
 }
 
-// Open / Close History
 
+// Open / Close History
 historyBtn.addEventListener("click", function () {
     historyPanel.classList.toggle("active");
 
@@ -295,8 +295,8 @@ closeHistory.addEventListener("click", function () {
     historyPanel.classList.remove("active");
 });
 
-// Clear History
 
+// Clear History
 clearHistoryBtn.addEventListener("click", function () {
     calculationHistory = [];
 
@@ -307,7 +307,6 @@ clearHistoryBtn.addEventListener("click", function () {
 
 
 // Calculator Button Events
-
 buttons.addEventListener("click", function (event) {
     const button = event.target;
 
@@ -344,7 +343,6 @@ buttons.addEventListener("click", function (event) {
 
 
 // Keyboard Support
-
 document.addEventListener("keydown", function (event) {
     const key = event.key;
 
