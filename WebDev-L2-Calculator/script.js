@@ -394,3 +394,7 @@ document.addEventListener("keydown", function (event) {
         clearCalculator();
     }
 });
+
+
+// Load History
+renderHistory();
