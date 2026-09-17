@@ -9,8 +9,8 @@ const closeHistory = document.getElementById("closeHistory");
 const historyList = document.getElementById("historyList");
 const clearHistoryBtn = document.getElementById("clearHistory");
 
-// Calculator State
 
+// Calculator State
 let expression = "";
 let justCalculated = false;
 
