@@ -26,8 +26,8 @@ function updateDisplay() {
     currentOperand.textContent = expression || "0";
 }
 
-// Check Operator
 
+// Check Operator
 function isOperator(value) {
     return ["+", "−", "×", "÷", "%"].includes(value);
 }
