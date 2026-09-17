@@ -14,8 +14,8 @@ const clearHistoryBtn = document.getElementById("clearHistory");
 let expression = "";
 let justCalculated = false;
 
-// History Data
 
+// History Data
 let calculationHistory = JSON.parse(
     localStorage.getItem("calculationHistory")
 ) || [];
