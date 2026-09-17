@@ -20,8 +20,8 @@ let calculationHistory = JSON.parse(
     localStorage.getItem("calculationHistory")
 ) || [];
 
-// Update Display
 
+// Update Display
 function updateDisplay() {
     currentOperand.textContent = expression || "0";
 }
