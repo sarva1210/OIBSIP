@@ -147,8 +147,8 @@ function calculate() {
     }
 }
 
-// Calculate Expression Without eval()
 
+// Calculate Expression Without eval()
 function calculateExpression(input) {
     const numbers = input.split(/[+−×÷%]/).map(Number);
     const operators = input.match(/[+−×÷%]/g);
