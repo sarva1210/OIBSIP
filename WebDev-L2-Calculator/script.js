@@ -199,7 +199,6 @@ function calculateExpression(input) {
     }
 
     // Addition and Subtraction
-
     let result = numbers[0];
 
     for (let i = 0; i < operators.length; i++) {
