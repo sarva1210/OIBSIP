@@ -32,8 +32,8 @@ function isOperator(value) {
     return ["+", "−", "×", "÷", "%"].includes(value);
 }
 
-// Add Number
 
+// Add Number
 function appendNumber(number) {
     if (justCalculated) {
         expression = "";
