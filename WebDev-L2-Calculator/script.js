@@ -224,13 +224,13 @@ function formatResult(number) {
     return Number(number.toFixed(10)).toString();
 }
 
-// Show Error
 
+// Show Error
 function showError(message) {
     expression = message;
     justCalculated = true;
 
-    display.classList.add("error");
+    display.classList.add("Error");
 
     updateDisplay();
 }
