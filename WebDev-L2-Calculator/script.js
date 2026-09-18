@@ -87,8 +87,8 @@ function chooseOperator(operator) {
     updateDisplay();
 }
 
-// Delete
 
+// Delete
 function deleteNumber() {
     if (justCalculated) {
         expression = "";
@@ -98,7 +98,6 @@ function deleteNumber() {
     }
 
     display.classList.remove("error");
-
     updateDisplay();
 }
 
