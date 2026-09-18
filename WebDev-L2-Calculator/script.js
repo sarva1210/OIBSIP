@@ -67,8 +67,8 @@ function appendNumber(number) {
     updateDisplay();
 }
 
-// Add Operator
 
+// Add Operator
 function chooseOperator(operator) {
     if (expression === "") {
         return;
