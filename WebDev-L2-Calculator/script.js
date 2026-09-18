@@ -158,7 +158,6 @@ function calculateExpression(input) {
     }
 
     // Multiplication, Division and Modulus
-
     for (let i = 0; i < operators.length; i++) {
         if (
             operators[i] === "×" ||
