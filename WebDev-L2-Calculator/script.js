@@ -101,14 +101,13 @@ function deleteNumber() {
     updateDisplay();
 }
 
-// Clear Calculator
 
+// Clear Calculator
 function clearCalculator() {
     expression = "";
     justCalculated = false;
 
     display.classList.remove("error");
-
     updateDisplay();
 }
 
