@@ -214,8 +214,8 @@ function calculateExpression(input) {
     return result;
 }
 
-// Format Result
 
+// Format Result
 function formatResult(number) {
     if (!Number.isFinite(number)) {
         throw new Error("Invalid result");
