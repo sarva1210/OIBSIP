@@ -18,3 +18,24 @@ A fully functional and responsive calculator built using **HTML5, CSS3, and Vani
 - Keyboard support
 - Interactive buttons using JavaScript event listeners
 - Calculation logic implemented without using `eval()`
+
+
+# How to Run
+Clone or download the repository.
+Open the WebDev-L2-Calculator folder.
+Open index.html in a web browser.
+Use the calculator to perform calculations.
+Click the History button to view previous calculations.
+
+| Key         | Action         |
+| ----------- | -------------- |
+| `0 - 9`     | Enter numbers  |
+| `.`         | Decimal        |
+| `+`         | Addition       |
+| `-`         | Subtraction    |
+| `*`         | Multiplication |
+| `/`         | Division       |
+| `%`         | Modulus        |
+| `Enter`     | Calculate      |
+| `Backspace` | Delete         |
+| `Escape`    | Clear          |
