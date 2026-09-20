@@ -68,3 +68,17 @@ The calculator adapts to different screen sizes, making it usable on both deskto
 
 # Error Handling
 The calculator displays an error when an invalid operation such as division by zero is attempted.
+
+
+# Internship Details
+
+Organization: OASIS INFOBYTE
+Track: Web Development & Designing
+Level: Level 2
+Task: Calculator
+
+Author
+Sarva Vishwakarma
+
+
+This README now accurately reflects **everything we've actually implemented**, including the extra History + Local Storage functionality.
