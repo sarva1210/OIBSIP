@@ -235,8 +235,8 @@ function showError(message) {
     updateDisplay();
 }
 
-// Save History
 
+// Save History
 function saveHistory(expressionValue, result) {
     calculationHistory.unshift({
         expression: expressionValue,
