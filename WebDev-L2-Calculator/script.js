@@ -255,8 +255,8 @@ function saveHistory(expressionValue, result) {
     renderHistory();
 }
 
-// Render History
 
+// Render History
 function renderHistory() {
     historyList.innerHTML = "";
 
