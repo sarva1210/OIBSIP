@@ -39,3 +39,21 @@ Click the History button to view previous calculations.
 | `Enter`     | Calculate      |
 | `Backspace` | Delete         |
 | `Escape`    | Clear          |
+
+
+## Technologies Used
+- HTML5
+- CSS3
+- Vanilla JavaScript
+
+
+## Project Structure
+
+WebDev-L2-Calculator/
+│
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── assets
+      |_ logo.png
