@@ -55,8 +55,16 @@ WebDev-L2-Calculator/
 ├── style.css
 ├── script.js
 ├── README.md
-└── assets
-      |_ logo.png
+│
+├── assets/
+│   └── logo.png
+│
+└── screenshots/
+    ├── calculator-default.png
+    ├── calculator-basic-operation.png
+    ├── calculator-error.png
+    ├── calculator-expression.png
+    └── calculator-history.png
 
       
 # Additional Features
