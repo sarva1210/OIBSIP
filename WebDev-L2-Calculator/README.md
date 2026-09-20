@@ -57,3 +57,14 @@ WebDev-L2-Calculator/
 ├── README.md
 └── assets
       |_ logo.png
+
+      
+# Additional Features
+Calculation History
+The calculator stores previous calculations using Local Storage. Up to 20 recent calculations are maintained and can be viewed through the History button.
+
+# Responsive Design
+The calculator adapts to different screen sizes, making it usable on both desktop and mobile devices.
+
+# Error Handling
+The calculator displays an error when an invalid operation such as division by zero is attempted.
