@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legends Who Inspired Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HOME PAGE -->
+
+    <main id="homePage">
+
+        <section class="hero">
+            <p class="subtitle">A Tribute to Great Souls</p>
+
+            <h1>Legends Who Inspired Us</h1>
+
+            <p class="hero-text">
+                Remembering the lives, achievements, and timeless words
+                of people who made a difference.
+            </p>
+        </section>
+
+        <!-- PEOPLE CARDS -->
+
+        <section class="people-section">
+
+            <div class="people-grid">
+
+                <!-- APJ ABDUL KALAM -->
+
+                <article class="person-card" data-person="kalam">
+
+                    <img
+                        src="assets/apj-abdul-kalam.jpg"
+                        alt="A. P. J. Abdul Kalam"
+                    >
+
+                    <div class="card-content">
+
+                        <h2>A. P. J. Abdul Kalam</h2>
+
+                        <p>
+                            Scientist • Visionary • Former President
+                        </p>
+
+                        <button class="view-btn">
+                            View Tribute
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- SWAMI VIVEKANANDA -->
+
+                <article class="person-card" data-person="vivekananda">
+
+                    <img
+                        src="assets/swami-vivekananda.jpg"
+                        alt="Swami Vivekananda"
+                    >
+
+                    <div class="card-content">
+
+                        <h2>Swami Vivekananda</h2>
+
+                        <p>
+                            Philosopher • Monk • Spiritual Leader
+                        </p>
+
+                        <button class="view-btn">
+                            View Tribute
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- RATAN TATA -->
+
+                <article class="person-card" data-person="tata">
+
+                    <img
+                        src="assets/ratan-tata.jpg"
+                        alt="Ratan Tata"
+                    >
+
+                    <div class="card-content">
+
+                        <h2>Ratan Tata</h2>
+
+                        <p>
+                            Industrialist • Philanthropist
+                        </p>
+
+                        <button class="view-btn">
+                            View Tribute
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- DR B R AMBEDKAR -->
+
+                <article class="person-card" data-person="ambedkar">
+
+                    <img
+                        src="assets/br-ambedkar.webp"
+                        alt="Dr. B. R. Ambedkar"
+                    >
+
+                    <div class="card-content">
+
+                        <h2>Dr. B. R. Ambedkar</h2>
+
+                        <p>
+                            Jurist • Economist • Social Reformer
+                        </p>
+
+                        <button class="view-btn">
+                            View Tribute
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- TRIBUTE PAGE -->
+
+    <main id="tributePage" class="tribute-page hidden">
+
+        <!-- BACK BUTTON -->
+
+        <button id="backButton" class="back-btn">
+            ← Back to Legends
+        </button>
+
+        <!-- TRIBUTE HERO -->
+
+        <section class="tribute-hero">
+
+            <img
+                id="tributeImage"
+                src=""
+                alt=""
+            >
+
+            <div class="tribute-heading">
+
+                <p id="tributeSubtitle"></p>
+
+                <h1 id="tributeName"></h1>
+
+            </div>
+
+        </section>
+
+        <!-- TRIBUTE CONTENT -->
+
+        <section class="tribute-content">
+
+            <!-- ABOUT -->
+
+            <div class="content-section">
+
+                <h2>About</h2>
+
+                <div id="tributeAbout"></div>
+
+            </div>
+
+            <!-- TIMELINE -->
+
+            <div class="content-section">
+
+                <h2>Timeline</h2>
+
+                <div
+                    id="tributeTimeline"
+                    class="timeline"
+                ></div>
+
+            </div>
+
+            <!-- ACHIEVEMENTS -->
+
+            <div class="content-section">
+
+                <h2>Key Achievements</h2>
+
+                <ul id="tributeAchievements"></ul>
+
+            </div>
+
+            <!-- QUOTE -->
+
+            <div class="quote-section">
+
+                <p id="tributeQuote"></p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
