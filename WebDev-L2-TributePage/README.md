@@ -1,6 +1,5 @@
 # Legends Who Inspired Us
-
-A responsive tribute website created as part of the **OASIS INFOBYTE Web Development & Designing Internship — Level 2, Task 2**.
+A responsive tribute website created as part of the OASIS INFOBYTE Web Development & Designing Internship — Level 2, Task 2.
 
 The website presents four inspiring personalities. Users can select a person from the home page and view their biography, timeline, achievements, and a quote without leaving the main HTML page.
 
@@ -78,6 +77,7 @@ The website is designed to work across:
 The personality images used in this project are sourced from royalty-free/public-domain or appropriately licensed Wikimedia Commons resources.
 
 Image sources should be credited according to the individual license requirements.
+
 
 # Internship Details
 
