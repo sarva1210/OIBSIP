@@ -48,6 +48,12 @@ WebDev-L2-TributePage/
 │   └── br-ambedkar.jpg
 │
 └── screenshots/
+    ├── tribute-home.png
+    ├── tribute-kalam-hero.png
+    ├── tribute-kalam-about.png
+    ├── tribute-kalam-timeline.png
+    ├── tribute-kalam-achievements.png
+    └── tribute-kalam-quote.png
 
 
 # How It Works
