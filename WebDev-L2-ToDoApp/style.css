@@ -232,3 +232,38 @@ body {
     color: #9ca3af;
     font-size: 12px;
 }
+
+/* TASK ACTIONS */
+
+.task-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.task-action {
+    padding: 8px 12px;
+    border: 1px solid #d6d3cc;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #374151;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.task-action:hover {
+    background: #f4f1ea;
+}
+
+.edit-btn:hover {
+    border-color: #a16207;
+    color: #a16207;
+}
+
+.delete-btn:hover {
+    border-color: #dc2626;
+    color: #dc2626;
+}
