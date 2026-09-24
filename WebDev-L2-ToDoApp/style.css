@@ -102,3 +102,47 @@ body {
     background: #a16207;
     transform: translateY(-2px);
 }
+
+/* FORM MESSAGE */
+
+.form-message {
+    min-height: 20px;
+    margin-top: 8px;
+    color: #dc2626;
+    font-size: 14px;
+}
+
+/* TASK SECTION */
+
+.task-section {
+    margin-bottom: 45px;
+}
+
+.completed-section {
+    margin-bottom: 0;
+}
+
+/* SECTION HEADER */
+
+.section-header {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.section-header h2 {
+    color: #1f2937;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+}
+
+.section-header span {
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #e9e2d4;
+    color: #8a5a0a;
+    font-size: 13px;
+    font-weight: 700;
+}
