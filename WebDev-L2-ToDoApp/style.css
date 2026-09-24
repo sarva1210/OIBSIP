@@ -267,3 +267,15 @@ body {
     border-color: #dc2626;
     color: #dc2626;
 }
+
+/* EDIT INPUT */
+
+.edit-input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #a16207;
+    border-radius: 7px;
+    outline: none;
+    color: #1f2937;
+    font-size: 16px;
+}
