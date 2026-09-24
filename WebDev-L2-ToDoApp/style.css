@@ -291,3 +291,9 @@ body {
     font-size: 15px;
     text-align: center;
 }
+
+/* HIDDEN */
+
+.hidden {
+    display: none;
+}
