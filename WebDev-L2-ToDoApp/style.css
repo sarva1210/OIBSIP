@@ -297,3 +297,40 @@ body {
 .hidden {
     display: none;
 }
+
+/* TABLET */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 40px 16px;
+    }
+
+    .app-header {
+        margin-bottom: 35px;
+    }
+
+    .app-header h1 {
+        font-size: 52px;
+    }
+
+    #taskForm {
+        flex-direction: column;
+    }
+
+    #addTaskButton {
+        min-height: 50px;
+    }
+
+    .task-item {
+        align-items: flex-start;
+    }
+
+    .task-actions {
+        flex-direction: column;
+    }
+
+    .task-action {
+        width: 70px;
+    }
+}
