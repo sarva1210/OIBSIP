@@ -52,3 +52,53 @@ body {
     color: #6b7280;
     font-size: 17px;
 }
+
+/* INPUT SECTION */
+
+.task-input-section {
+    margin-bottom: 45px;
+}
+
+#taskForm {
+    display: flex;
+    gap: 12px;
+}
+
+#taskInput {
+    flex: 1;
+    min-width: 0;
+    padding: 17px 18px;
+    border: 1px solid #d6d3cc;
+    border-radius: 12px;
+    outline: none;
+    background: #ffffff;
+    color: #1f2937;
+    font-size: 16px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#taskInput::placeholder {
+    color: #9ca3af;
+}
+
+#taskInput:focus {
+    border-color: #a16207;
+    box-shadow: 0 0 0 3px rgba(161, 98, 7, 0.12);
+}
+
+#addTaskButton {
+    padding: 0 25px;
+    border: none;
+    border-radius: 12px;
+    background: #1f2937;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+#addTaskButton:hover {
+    background: #a16207;
+    transform: translateY(-2px);
+}
