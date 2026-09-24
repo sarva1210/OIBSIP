@@ -207,3 +207,28 @@ body {
     font-weight: 700;
     transform: translate(-50%, -50%);
 }
+
+/* TASK CONTENT */
+
+.task-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.task-text {
+    margin-bottom: 6px;
+    color: #1f2937;
+    font-size: 16px;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+.task-item.completed .task-text {
+    color: #9ca3af;
+    text-decoration: line-through;
+}
+
+.task-time {
+    color: #9ca3af;
+    font-size: 12px;
+}
