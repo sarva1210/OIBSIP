@@ -334,3 +334,48 @@ body {
         width: 70px;
     }
 }
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 30px 14px;
+    }
+
+    .app-header h1 {
+        font-size: 44px;
+    }
+
+    .header-text {
+        font-size: 15px;
+    }
+
+    .section-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .section-header h2 {
+        font-size: 25px;
+    }
+
+    .task-item {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .task-text {
+        font-size: 15px;
+    }
+
+    .task-actions {
+        gap: 5px;
+    }
+
+    .task-action {
+        width: 60px;
+        padding: 7px 5px;
+        font-size: 12px;
+    }
+}
