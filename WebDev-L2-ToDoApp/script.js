@@ -63,4 +63,36 @@ function createTaskElement(task) {
         "aria-label",
         task.completed ? "Mark task as pending" : "Mark task as complete"
     );
+
+    const taskContent = document.createElement("div");
+    taskContent.classList.add("task-content");
+
+    const taskText = document.createElement("p");
+    taskText.classList.add("task-text");
+    taskText.textContent = task.text;
+
+    const taskTime = document.createElement("p");
+    taskTime.classList.add("task-time");
+
+    if (task.completed && task.completedAt) {
+        taskTime.textContent = `Completed: ${formatDate(task.completedAt)}`;
+    } else {
+        taskTime.textContent = `Added: ${formatDate(task.createdAt)}`;
+    }
+
+    taskContent.appendChild(taskText);
+    taskContent.appendChild(taskTime);
+
+    const taskActions = document.createElement("div");
+    taskActions.classList.add("task-actions");
+
+    const editButton = document.createElement("button");
+    editButton.classList.add("task-action", "edit-btn");
+    editButton.type = "button";
+    editButton.textContent = "Edit";
+
+    const deleteButton = document.createElement("button");
+    deleteButton.classList.add("task-action", "delete-btn");
+    deleteButton.type = "button";
+    deleteButton.textContent = "Delete";
 }    
