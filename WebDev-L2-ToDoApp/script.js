@@ -11,3 +11,11 @@ const completedCount = document.getElementById("completedCount");
 
 const pendingEmpty = document.getElementById("pendingEmpty");
 const completedEmpty = document.getElementById("completedEmpty");
+
+// LOAD TASKS
+let tasks = JSON.parse(localStorage.getItem("todoTasks")) || [];
+
+// SAVE TASKS
+function saveTasks() {
+    localStorage.setItem("todoTasks", JSON.stringify(tasks));
+}
