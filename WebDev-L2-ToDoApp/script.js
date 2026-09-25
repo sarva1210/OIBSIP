@@ -19,3 +19,28 @@ let tasks = JSON.parse(localStorage.getItem("todoTasks")) || [];
 function saveTasks() {
     localStorage.setItem("todoTasks", JSON.stringify(tasks));
 }
+
+// FORMAT DATE
+function formatDate(date) {
+    return new Date(date).toLocaleString("en-IN", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+    });
+}
+
+// UPDATE COUNTS
+function updateCounts() {
+    const pending = tasks.filter(function (task) {
+        return !task.completed;
+    });
+
+    const completed = tasks.filter(function (task) {
+        return task.completed;
+    });
+
+    pendingCount.textContent = `${pending.length} pending`;
+    completedCount.textContent = `${completed.length} completed`;
+}
