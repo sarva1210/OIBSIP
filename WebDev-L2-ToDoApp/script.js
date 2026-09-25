@@ -44,3 +44,23 @@ function updateCounts() {
     pendingCount.textContent = `${pending.length} pending`;
     completedCount.textContent = `${completed.length} completed`;
 }
+
+// CREATE TASK ELEMENT
+function createTaskElement(task) {
+    const taskItem = document.createElement("div");
+    taskItem.classList.add("task-item");
+
+    if (task.completed) {
+        taskItem.classList.add("completed");
+    }
+
+    taskItem.dataset.id = task.id;
+
+    const completeButton = document.createElement("button");
+    completeButton.classList.add("complete-toggle");
+    completeButton.type = "button";
+    completeButton.setAttribute(
+        "aria-label",
+        task.completed ? "Mark task as pending" : "Mark task as complete"
+    );
+}    
