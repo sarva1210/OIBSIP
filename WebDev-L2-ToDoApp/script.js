@@ -147,3 +147,41 @@ function renderTasks() {
 
     updateCounts();
 }
+
+// ADD TASK
+
+function addTask(text) {
+    const newTask = {
+        id: Date.now().toString(),
+        text: text,
+        completed: false,
+        createdAt: new Date().toISOString(),
+        completedAt: null
+    };
+
+    tasks.push(newTask);
+
+    saveTasks();
+    renderTasks();
+}
+
+// FORM SUBMIT
+
+taskForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const text = taskInput.value.trim();
+
+    if (text === "") {
+        formMessage.textContent = "Please enter a task.";
+        taskInput.focus();
+        return;
+    }
+
+    formMessage.textContent = "";
+
+    addTask(text);
+
+    taskInput.value = "";
+    taskInput.focus();
+});
