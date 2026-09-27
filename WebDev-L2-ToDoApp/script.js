@@ -212,3 +212,58 @@ function toggleTask(taskId) {
     saveTasks();
     renderTasks();
 }
+
+// EDIT TASK
+
+function editTask(taskId, taskItem, taskContent) {
+    const task = tasks.find(function (item) {
+        return item.id === taskId;
+    });
+
+    if (!task) {
+        return;
+    }
+
+    const oldText = task.text;
+
+    taskContent.innerHTML = "";
+
+    const editInput = document.createElement("input");
+    editInput.classList.add("edit-input");
+    editInput.type = "text";
+    editInput.value = oldText;
+    editInput.maxLength = 200;
+
+    taskContent.appendChild(editInput);
+
+    editInput.focus();
+    editInput.select();
+
+    function saveEdit() {
+        const newText = editInput.value.trim();
+
+        if (newText === "") {
+            renderTasks();
+            return;
+        }
+
+        task.text = newText;
+
+        saveTasks();
+        renderTasks();
+    }
+
+    editInput.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            saveEdit();
+        }
+
+        if (event.key === "Escape") {
+            renderTasks();
+        }
+    });
+
+    editInput.addEventListener("blur", function () {
+        saveEdit();
+    });
+}
