@@ -267,3 +267,17 @@ function editTask(taskId, taskItem, taskContent) {
         saveEdit();
     });
 }
+
+// DELETE TASK
+
+function deleteTask(taskId) {
+    tasks = tasks.filter(function (task) {
+        return task.id !== taskId;
+    });
+
+    saveTasks();
+    renderTasks();
+}
+
+// INITIAL RENDER
+renderTasks();
