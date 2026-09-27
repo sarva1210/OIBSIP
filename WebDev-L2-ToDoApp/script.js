@@ -185,3 +185,30 @@ taskForm.addEventListener("submit", function (event) {
     taskInput.value = "";
     taskInput.focus();
 });
+
+// CLEAR FORM MESSAGE
+
+taskInput.addEventListener("input", function () {
+    formMessage.textContent = "";
+});
+
+// TOGGLE TASK
+
+function toggleTask(taskId) {
+    tasks = tasks.map(function (task) {
+        if (task.id === taskId) {
+            task.completed = !task.completed;
+
+            if (task.completed) {
+                task.completedAt = new Date().toISOString();
+            } else {
+                task.completedAt = null;
+            }
+        }
+
+        return task;
+    });
+
+    saveTasks();
+    renderTasks();
+}
