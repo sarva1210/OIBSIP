@@ -117,3 +117,33 @@ function createTaskElement(task) {
 
     return taskItem;
 }
+
+// RENDER TASKS
+function renderTasks() {
+    pendingTasks.innerHTML = "";
+    completedTasks.innerHTML = "";
+
+    const pending = tasks.filter(function (task) {
+        return !task.completed;
+    });
+
+    const completed = tasks.filter(function (task) {
+        return task.completed;
+    });
+
+    pending.forEach(function (task) {
+        pendingTasks.appendChild(createTaskElement(task));
+    });
+
+    completed.forEach(function (task) {
+        completedTasks.appendChild(createTaskElement(task));
+    });
+
+    pendingEmpty.classList.toggle("hidden", pending.length > 0);
+    completedEmpty.classList.toggle("hidden", completed.length > 0);
+
+    pendingTasks.appendChild(pendingEmpty);
+    completedTasks.appendChild(completedEmpty);
+
+    updateCounts();
+}
