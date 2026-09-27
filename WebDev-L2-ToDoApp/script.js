@@ -95,4 +95,25 @@ function createTaskElement(task) {
     deleteButton.classList.add("task-action", "delete-btn");
     deleteButton.type = "button";
     deleteButton.textContent = "Delete";
-}    
+
+    taskActions.appendChild(editButton);
+    taskActions.appendChild(deleteButton);
+
+    taskItem.appendChild(completeButton);
+    taskItem.appendChild(taskContent);
+    taskItem.appendChild(taskActions);
+
+    completeButton.addEventListener("click", function () {
+        toggleTask(task.id);
+    });
+
+    editButton.addEventListener("click", function () {
+        editTask(task.id, taskItem, taskContent);
+    });
+
+    deleteButton.addEventListener("click", function () {
+        deleteTask(task.id);
+    });
+
+    return taskItem;
+}
