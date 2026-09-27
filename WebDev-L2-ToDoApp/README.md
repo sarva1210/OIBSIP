@@ -43,3 +43,44 @@ WebDev-L2-ToDoApp/
     ├── todo-task-moved-to-completed.png
     ├── todo-all-completed.png
     └── todo-persistent-tasks.png
+
+
+# How It Works
+Enter a task in the input field.
+Click Add Task to create the task.
+The new task appears in the Pending Tasks list.
+Use the completion toggle to mark a task as completed.
+Completed tasks move to the Completed Tasks list.
+Use Edit to modify the task text inline.
+Use Delete to permanently remove a task.
+Task counts are updated automatically.
+Timestamps show when tasks were added or completed.
+Tasks are saved in localStorage, so they remain available after refreshing the page.
+
+# Empty States
+The application displays friendly messages when there are no tasks in a list.
+
+# Pending Tasks
+No pending tasks. You're all caught up!
+
+# Completed Tasks
+No completed tasks yet.
+
+# Responsive Design
+The application is designed to work across:
+Desktop
+Laptop
+Tablet
+Mobile devices
+
+
+# Internship Details
+
+Organization: OASIS INFOBYTE
+Track: Web Development & Designing
+Level: Level 2
+Task: To-Do Web App
+
+
+Author
+Sarva Vishwakarma
