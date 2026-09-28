@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="auth-container">
+
+        <!-- AUTH PAGE -->
+
+        <div class="auth-wrapper">
+
+            <!-- REGISTER PAGE -->
+
+            <section id="registerPage" class="auth-page register-page">
+
+                <div class="auth-header">
+
+                    <p class="subtitle">
+                        Create Account
+                    </p>
+
+                    <h1>
+                        Register
+                    </h1>
+
+                    <p>
+                        Create your account to get started.
+                    </p>
+
+                </div>
+
+                <form id="registerForm" class="auth-form">
+
+                    <div class="form-group">
+
+                        <label for="registerUsername">
+                            Username / Email
+                        </label>
+
+                        <input
+                            type="text"
+                            id="registerUsername"
+                            placeholder="Enter username or email"
+                            autocomplete="username"
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="registerPassword">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            placeholder="Enter password"
+                            autocomplete="new-password"
+                        >
+
+                    </div>
+
+                    <p class="password-hint">
+                        Minimum 8 characters with at least 1 number.
+                    </p>
+
+                    <p
+                        id="registerMessage"
+                        class="message"
+                    ></p>
+
+                    <button
+                        type="submit"
+                        class="auth-button"
+                    >
+                        Register
+                    </button>
+
+                </form>
+
+                <p class="switch-text">
+
+                    Already have an account?
+
+                    <button
+                        type="button"
+                        id="showLoginButton"
+                    >
+                        Login
+                    </button>
+
+                </p>
+
+            </section>
+
+            <!-- LOGIN PAGE -->
+
+            <section id="loginPage" class="auth-page login-page">
+
+                <div class="auth-header">
+
+                    <p class="subtitle">
+                        Welcome Back
+                    </p>
+
+                    <h1>
+                        Login
+                    </h1>
+
+                    <p>
+                        Login to access your dashboard.
+                    </p>
+
+                </div>
+
+                <form id="loginForm" class="auth-form">
+
+                    <div class="form-group">
+
+                        <label for="loginUsername">
+                            Username / Email
+                        </label>
+
+                        <input
+                            type="text"
+                            id="loginUsername"
+                            placeholder="Enter username or email"
+                            autocomplete="username"
+                        >
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="loginPassword">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="loginPassword"
+                            placeholder="Enter password"
+                            autocomplete="current-password"
+                        >
+
+                    </div>
+
+                    <p
+                        id="loginMessage"
+                        class="message"
+                    ></p>
+
+                    <button
+                        type="submit"
+                        class="auth-button"
+                    >
+                        Login
+                    </button>
+
+                </form>
+
+                <p class="switch-text">
+
+                    Don't have an account?
+
+                    <button
+                        type="button"
+                        id="showRegisterButton"
+                    >
+                        Register
+                    </button>
+
+                </p>
+
+            </section>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
