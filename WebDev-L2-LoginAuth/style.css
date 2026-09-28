@@ -28,3 +28,25 @@ body {
     min-height: 590px;
     overflow: hidden;
 }
+
+/* AUTH PAGE */
+
+.auth-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 45px;
+    border: 1px solid #e5e0d5;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    transition: transform 0.55s ease, opacity 0.55s ease;
+}
+
+/* REGISTER PAGE */
+
+.register-page {
+    transform: translateX(0);
+    opacity: 1;
+}
