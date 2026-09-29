@@ -67,3 +67,32 @@ body {
     transform: translateX(0);
     opacity: 1;
 }
+
+
+.auth-header {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.subtitle {
+    margin-bottom: 12px;
+    color: #a16207;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.auth-header h1 {
+    margin-bottom: 12px;
+    color: #1f2937;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 52px;
+    line-height: 1;
+}
+
+.auth-header p:last-child {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+}
