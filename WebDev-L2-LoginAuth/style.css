@@ -50,3 +50,20 @@ body {
     transform: translateX(0);
     opacity: 1;
 }
+
+/* LOGIN PAGE */
+
+.login-page {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.auth-wrapper.show-login .register-page {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.auth-wrapper.show-login .login-page {
+    transform: translateX(0);
+    opacity: 1;
+}
