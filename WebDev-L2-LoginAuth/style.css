@@ -176,3 +176,26 @@ body {
     background: #a16207;
     transform: translateY(-2px);
 }
+
+/* SWITCH TEXT */
+
+.switch-text {
+    margin-top: 25px;
+    color: #6b7280;
+    font-size: 14px;
+    text-align: center;
+}
+
+.switch-text button {
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: #a16207;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.switch-text button:hover {
+    text-decoration: underline;
+}
