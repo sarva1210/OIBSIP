@@ -199,3 +199,28 @@ body {
 .switch-text button:hover {
     text-decoration: underline;
 }
+
+/* DASHBOARD */
+
+.dashboard-page {
+    width: 100%;
+    text-align: center;
+}
+
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    margin-bottom: 12px;
+    color: #1f2937;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 58px;
+    line-height: 1;
+}
+
+.dashboard-header p:last-child {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 1.6;
+}
