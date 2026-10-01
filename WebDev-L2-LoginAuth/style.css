@@ -248,3 +248,23 @@ body {
     font-size: 15px;
     line-height: 1.7;
 }
+
+/* LOGOUT */
+
+.logout-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #1f2937;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.logout-button:hover {
+    background: #dc2626;
+    transform: translateY(-2px);
+}
