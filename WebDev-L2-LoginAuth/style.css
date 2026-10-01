@@ -274,3 +274,32 @@ body {
 .hidden {
     display: none;
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 550px) {
+
+    body {
+        padding: 20px 15px;
+    }
+
+    .auth-wrapper {
+        min-height: 570px;
+    }
+
+    .auth-page {
+        padding: 35px 25px;
+    }
+
+    .auth-header h1 {
+        font-size: 44px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 48px;
+    }
+
+    .dashboard-card {
+        padding: 28px 22px;
+    }
+}
