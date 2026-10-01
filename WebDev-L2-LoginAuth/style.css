@@ -268,3 +268,9 @@ body {
     background: #dc2626;
     transform: translateY(-2px);
 }
+
+/* HIDDEN */
+
+.hidden {
+    display: none;
+}
