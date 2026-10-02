@@ -15,3 +15,26 @@ A frontend-based Login Authentication System developed as part of the OASIS INFO
 - Logout functionality
 - Responsive design
 - Session persistence after page refresh
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Local Storage
+- Web Crypto API
+
+## Project Structure
+
+WebDev-L2-LoginAuth/
+│
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── screenshots/
+    ├── login-register.png
+    ├── registration-success.png
+    ├── login-error.png
+    ├── login-success.png
+    └── dashboard-logout.png
