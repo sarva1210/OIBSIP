@@ -38,3 +38,22 @@ WebDev-L2-LoginAuth/
     ├── login-error.png
     ├── login-success.png
     └── dashboard-logout.png
+
+## How It Works
+
+1. Registration
+The user enters a username/email and password. The password must contain at least 8 characters and one number.
+Before creating an account, the system checks whether the username/email already exists.
+The password is converted into a SHA-256 hash before being stored in Local Storage.
+
+2. Login
+The user enters their registered username/email and password.
+The entered password is hashed again and compared with the stored password hash.
+If the credentials are correct, a login session is created and the user is redirected to the protected dashboard.
+
+3. Protected Dashboard
+The dashboard is displayed only when a valid login session exists.
+If the user refreshes the page, the existing session is checked and the dashboard remains accessible.
+
+4. Logout
+Clicking the Logout button removes the active session from Local Storage and returns the user to the registration page.
