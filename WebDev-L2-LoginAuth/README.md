@@ -57,3 +57,16 @@ If the user refreshes the page, the existing session is checked and the dashboar
 
 4. Logout
 Clicking the Logout button removes the active session from Local Storage and returns the user to the registration page.
+
+## Validation
+The system validates:
+
+* Empty username/email
+* Empty password
+* Password length
+* Password number requirement
+* Duplicate username/email
+* Incorrect login credentials
+
+## User Interface
+The authentication interface includes a sliding transition between the Register and Login sections, providing a smooth user experience without navigating to separate pages.
