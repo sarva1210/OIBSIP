@@ -70,3 +70,11 @@ The system validates:
 
 ## User Interface
 The authentication interface includes a sliding transition between the Register and Login sections, providing a smooth user experience without navigating to separate pages.
+
+## Internship Details
+OASIS INFOBYTE Web Development & Designing Internship
+Level 2
+Task 4 — Login Authentication System
+
+## Author
+Sarva Vishwakarma
